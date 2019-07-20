@@ -4,6 +4,17 @@
     <title>Picture Album Example</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+      .zoom {
+        padding: 50px;
+        transition: transform .2s; /* Animation */
+        margin: 0 auto;
+      }
+
+      .zoom:hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
+    </style>
   </head>
   <body>
     <div class="w3-container w3-teal">
@@ -42,7 +53,7 @@
     <div class="w3-row-padding w3-margin-top">
       <div class="w3-third">
         <div class="w3-card">
-          <img src="https://www.w3schools.com/w3css/img_manarola.jpg" style="width:100%">
+          <img class="zoom" src="https://www.w3schools.com/w3css/img_manarola.jpg" style="width:100%">
           <div class="w3-container">
             <h5>Row 2, Column 1</h5>
           </div>
